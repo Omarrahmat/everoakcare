@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Everoak Care | Sensory-friendly children's homes in South London</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Everoak Care">
+<meta property="og:description" content="Small, sensory-friendly children's homes in South London for young people with learning disabilities, autism and additional needs.">
+<meta name="description" content="Small, sensory-friendly children's homes in South London for young people with learning disabilities, autism and additional needs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Layout: one 1240px column of full-width colour bands; a tree of coloured circles is the brand's single big moment. */
+:root{
+  --bg:#FFFCF6; --surface:#FFFFFF; --fg:#1D2A24; --muted:#3E4E46; --soft:#4E6B5E;
+  --oak:#1E4D3B; --oak-deep:#123326; --oak-panel:#2A5E4A; --on-oak:#FFFFFF; --on-oak-muted:#D2E2D9;
+  --sun:#F4B63F; --coral:#F2785C; --coral-text:#C4482A; --sky:#5DB6DE; --lilac:#A98BDB; --leaf:#7CC59A;
+  --tint-sky:#EAF5FB; --tint-sun:#FFF3D6; --tint-coral:#FDE9E3; --tint-lilac:#F1EBFB;
+  --line:#BFD6E2; --sun-text:#7A5200; --btn-fg:#FFFFFF; --trunk:#1E4D3B;
+  --display:'Bricolage Grotesque', 'Trebuchet MS', system-ui, sans-serif;
+  --body:Nunito, 'Segoe UI', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1D17; --surface:#16281F; --fg:#ECF3EF; --muted:#BFD0C6; --soft:#A9C2B5;
+  --oak:#9FD6B8; --oak-deep:#0A1611; --oak-panel:#1C3A2D; --on-oak:#0F1D17; --on-oak-muted:#1C3A2D;
+  --coral-text:#FF9E85; --tint-sky:#132A35; --tint-sun:#2E2614; --tint-coral:#33201B; --tint-lilac:#241E33;
+  --line:#2D4A5A; --sun-text:#F4C766; --btn-fg:#0F1D17; --trunk:#CFE6D9; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1D17; --surface:#16281F; --fg:#ECF3EF; --muted:#BFD0C6; --soft:#A9C2B5;
+  --oak:#9FD6B8; --oak-deep:#0A1611; --oak-panel:#1C3A2D; --on-oak:#0F1D17; --on-oak-muted:#1C3A2D;
+  --coral-text:#FF9E85; --tint-sky:#132A35; --tint-sun:#2E2614; --tint-coral:#33201B; --tint-lilac:#241E33;
+  --line:#2D4A5A; --sun-text:#F4C766; --btn-fg:#0F1D17; --trunk:#CFE6D9; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.6}
+a{color:var(--oak)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);color:var(--oak);text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-weight:700;color:var(--coral-text);letter-spacing:1.5px;font-size:14px;text-transform:uppercase;margin-bottom:10px}
+.h2{font-size:clamp(30px,3.6vw,48px);line-height:1.1;margin-bottom:16px}
+.lede{color:var(--muted);max-width:66ch}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 27px;border-radius:999px;border:2px solid var(--oak);background:var(--oak);color:var(--btn-fg);font:inherit;font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--oak)}
+
+/* header */
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-block:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.word{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--oak)}
+.word span{font-weight:500;color:var(--soft)}
+nav{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;font-weight:700;font-size:16px}
+nav a{text-decoration:none}
+nav .btn{padding:11px 20px;font-size:16px}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding-block:32px 72px}
+.hero-copy{flex:1 1 520px;min-width:0}
+.pill{display:inline-block;background:var(--tint-sun);color:var(--sun-text);font-weight:700;font-size:15px;padding:8px 16px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-weight:800;font-size:clamp(40px,5.6vw,76px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--coral-text)}
+.hero .lede{font-size:21px;margin-bottom:32px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.tree{flex:1 1 400px;min-width:0;max-width:520px;margin:0 auto}
+.tree svg{width:100%;height:auto;display:block}
+.tree text{font-family:var(--display);font-weight:700;font-size:15px;fill:#1D2A24}
+.tree .float{animation:bob 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.tree .float:nth-of-type(2){animation-delay:-1.5s}.tree .float:nth-of-type(3){animation-delay:-3s}.tree .float:nth-of-type(4){animation-delay:-4.5s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion: reduce){.tree .float{animation:none}}
+
+/* strip */
+/* promise */
+.promise{display:flex;flex-wrap:wrap;gap:40px 64px;padding-block:8px 80px;align-items:flex-start}
+.promise-copy{flex:1 1 440px;min-width:0}
+.promise-copy p{color:var(--muted);margin-bottom:16px;max-width:60ch}
+.values{flex:1 1 420px;min-width:0;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.values li{display:flex;gap:16px;align-items:center;background:var(--surface);border-radius:20px;padding:16px 20px}
+.values .dot{flex:none;width:40px;height:40px;border-radius:50%}
+.values b{display:block;font-family:var(--display);font-size:20px;color:var(--oak);line-height:1.2}
+.values span{font-size:16px;color:var(--muted)}
+.values .core{outline:3px solid #5DB6DE;outline-offset:-3px}
+.strip{background:var(--oak);color:var(--on-oak)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;padding-block:36px}
+.strip b{display:block;font-family:var(--display);font-size:28px;line-height:1.2}
+.strip p{font-size:16px;opacity:.88}
+.strip .c1{color:var(--sun)}.strip .c2{color:var(--sky)}.strip .c3{color:var(--coral)}.strip .c4{color:var(--lilac)}
+:root[data-theme="dark"] .strip b,:root[data-theme="dark"] .strip p{color:var(--on-oak)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .strip b,:root:not([data-theme="light"]) .strip p{color:var(--on-oak)}}
+
+section.block{padding-block:88px 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:40px}
+.card{border-radius:28px;padding:32px}
+.card h3{font-size:24px;margin-bottom:8px}
+.card p{font-size:17px;color:var(--muted)}
+.icon{width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.t-sky{background:var(--tint-sky)}.t-sun{background:var(--tint-sun)}.t-coral{background:var(--tint-coral)}.t-lilac{background:var(--tint-lilac)}
+
+/* home */
+.home{background:var(--oak-deep);border-radius:40px;padding:clamp(28px,5vw,72px);display:flex;flex-wrap:wrap;gap:48px;color:#EAF2ED}
+.home h2{color:#FFFFFF}
+.home .eyebrow{color:var(--sun)}
+.home-copy{flex:1 1 360px;min-width:0}
+.home-copy p{color:#D2E2D9;margin-bottom:16px}
+.feat{flex:1 1 520px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.feat div{background:#2A5E4A;border-radius:22px;padding:22px}
+.feat b{display:block;margin-bottom:4px}
+.feat p{font-size:16px;color:#D2E2D9}
+
+/* approach */
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px}
+.steps .n{font-family:var(--display);font-size:56px;font-weight:800;line-height:1;margin-bottom:8px}
+.steps h3{font-size:24px;margin-bottom:8px}
+.steps p{font-size:17px;color:var(--muted)}
+
+.band{background:var(--tint-sun)}
+.band .wrap{display:flex;flex-wrap:wrap;gap:48px;padding-block:88px}
+.band .eyebrow{color:var(--sun-text)}
+.col{flex:1 1 440px;min-width:0}
+.col p{color:var(--muted);margin-bottom:18px}
+.box{background:var(--surface);border-radius:28px;padding:36px}
+.box h3{font-size:22px;margin-bottom:16px}
+.box ul{margin:0;padding-left:22px;color:var(--muted);font-size:17px;display:grid;gap:10px}
+
+.careers{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;padding-block:88px}
+.careers .btn{background:var(--coral);border-color:var(--coral);color:#2A0F06}
+
+.contact{background:var(--tint-sky);border-radius:40px;padding:clamp(24px,5vw,64px);display:flex;flex-wrap:wrap;gap:40px;margin-bottom:96px}
+form{flex:1 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px;color:var(--oak)}
+input,select,textarea{font:inherit;font-weight:400;color:var(--fg);padding:13px 16px;border-radius:14px;border:2px solid var(--line);background:var(--surface)}
+.full{grid-column:1/-1}
+.note{font-size:14px;color:var(--muted)}
+#formMsg{font-weight:700;color:var(--oak)}
+
+footer{background:var(--oak-deep);color:#C6D8CE;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;padding-block:48px}
+footer b{font-family:var(--display);font-size:24px;color:#FFFFFF;display:block;margin-bottom:6px}
+footer a{color:#FFFFFF}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Everoak Care home">
+      <svg width="46" height="46" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="42" cy="46" r="24" fill="#F4B63F"/><circle cx="74" cy="40" r="26" fill="#F2785C"/><circle cx="58" cy="66" r="24" fill="#5DB6DE"/><circle cx="84" cy="68" r="18" fill="#A98BDB"/><circle cx="34" cy="70" r="16" fill="#7CC59A"/>
+        <path d="M56 70 L64 70 L66 108 L54 108 Z" fill="var(--trunk)"/><path d="M60 86 L46 74 M60 80 L74 70" stroke="var(--trunk)" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="word">everoak<span> care</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#who">Who we care for</a>
+      <a href="#home">Our home</a>
+      <a href="#approach">Our approach</a>
+      <a href="#referrals">Referrals</a>
+      <a href="#careers">Careers</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <p class="pill">Opening soon in South London</p>
+      <h1>A home where every child feels <em>understood</em>.</h1>
+      <p class="lede">Everoak Care provides small, sensory-friendly children's homes in London for young people with learning disabilities, autism and additional needs, with consistent adults who take the time to understand how each child experiences the world.</p>
+      <div class="ctas">
+        <a class="btn" href="#referrals">For social workers &amp; commissioners</a>
+        <a class="btn ghost" href="#approach">How we care</a>
+      </div>
+    </div>
+    <div class="tree">
+      <svg viewBox="0 0 520 500" role="img" aria-label="An oak tree whose canopy is made of coloured circles labelled safe, consistent, heard, belonging and nurturing">
+        <path d="M244 300 L276 300 L286 470 L234 470 Z" fill="var(--trunk)"/>
+        <path d="M260 380 L196 320 M260 352 L326 300" stroke="var(--trunk)" stroke-width="16" stroke-linecap="round"/>
+        <path d="M150 478 Q260 456 370 478" stroke="var(--trunk)" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <g class="float"><circle cx="170" cy="170" r="104" fill="#F4B63F"/><text x="170" y="150" text-anchor="middle">Safe</text></g>
+        <g class="float"><circle cx="318" cy="140" r="112" fill="#F2785C"/><text x="330" y="110" text-anchor="middle">Consistent</text></g>
+        <g class="float"><circle cx="250" cy="250" r="100" fill="#5DB6DE"/><text x="250" y="262" text-anchor="middle">Belonging</text></g>
+        <g class="float"><circle cx="398" cy="262" r="76" fill="#A98BDB"/><text x="404" y="270" text-anchor="middle">Nurturing</text></g>
+        <circle cx="120" cy="270" r="66" fill="#7CC59A"/><text x="116" y="276" text-anchor="middle">Heard</text>
+      </svg>
+    </div>
+  </div>
+
+  <section class="wrap promise" id="promise" aria-labelledby="promise-h">
+    <div class="promise-copy">
+      <p class="eyebrow">Our promise</p>
+      <h2 class="h2" id="promise-h">Rooted in belonging.</h2>
+      <p>Our oak tree is more than a logo. It is our promise. Like an oak, we stand firm as a sheltering, rooted home for children and young people who have known too much uncertainty.</p>
+      <p>Belonging sits at the heart of the tree, and every other value grows from it.</p>
+      <p>We don't just provide a place to stay. We build secure, lasting homes where young people feel valued and supported to grow into their full potential.</p>
+    </div>
+    <ul class="values">
+      <li class="core"><i class="dot" style="background:#5DB6DE"></i><div><b>Belonging</b><span>The heart of everything we do: a home that is truly theirs.</span></div></li>
+      <li><i class="dot" style="background:#F4B63F"></i><div><b>Safe</b><span>Safety to be themselves.</span></div></li>
+      <li><i class="dot" style="background:#F2785C"></i><div><b>Consistent</b><span>The same caring adults, day after day, so trust can rebuild.</span></div></li>
+      <li><i class="dot" style="background:#7CC59A"></i><div><b>Heard</b><span>Space to be truly listened to, however they communicate.</span></div></li>
+      <li><i class="dot" style="background:#A98BDB"></i><div><b>Nurturing</b><span>Warmth that helps them rediscover confidence, hope and purpose.</span></div></li>
+    </ul>
+  </section>
+
+  <section class="strip" aria-label="At a glance">
+    <div class="wrap">
+      <div><b class="c1">Small homes</b><p>[2–4] young people per home, so routines stay predictable.</p></div>
+      <div><b class="c2">Ages [8–17]</b><p>Children looked after by local authorities.</p></div>
+      <div><b class="c3">Sensory-led</b><p>Spaces and daily rhythms shaped around each child's sensory profile.</p></div>
+      <div><b class="c4">South London</b><p>Our first home, with more across London to follow.</p></div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="who">
+    <p class="eyebrow">Who we care for</p>
+    <h2 class="h2">Children who need a home that fits the way they think, feel and communicate.</h2>
+    <p class="lede">Our Statement of Purpose sets out exactly who each home cares for. We only accept a placement when we are confident we can meet the child's needs alongside the young people already living there.</p>
+    <div class="cards">
+      <div class="card t-sky"><div class="icon" style="background:#5DB6DE"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 2.5 1.5 4 2.5 5.5S10 17 10 19h4c0-2 .5-3 1.5-4.5S18 11.5 18 9a6 6 0 0 0-6-6z"/><path d="M10 22h4"/></svg></div><h3>Learning disabilities</h3><p>Clear, visual routines, life skills at each child's pace and patient support with school, health and family time.</p></div>
+      <div class="card t-sun"><div class="icon" style="background:#F4B63F"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></div><h3>Autism</h3><p>Predictable days, low-arousal spaces and adults who learn each child's communication: spoken, signed, symbols or AAC.</p></div>
+      <div class="card t-coral"><div class="icon" style="background:#F2785C"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-4 5-6 10-6s8 2 10 6c-2 4-5 6-10 6S4 16 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Sensory processing needs</h3><p>Every child has a sensory profile that shapes their room, their day and how we help them regulate.</p></div>
+      <div class="card t-lilac"><div class="icon" style="background:#A98BDB"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Emotional wellbeing</h3><p>Trauma-informed, relationship-based care for children who have had a difficult start.</p></div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="home">
+    <div class="home">
+      <div class="home-copy">
+        <p class="eyebrow">Our first home · South London</p>
+        <h2 class="h2">Designed around the senses, not just the floor plan.</h2>
+        <p>A real family house on a residential street, close to parks, schools and transport, adapted so it feels safe and calm for children who find the world loud.</p>
+        <p>Opening [month 2027], subject to Ofsted registration.</p>
+      </div>
+      <div class="feat">
+        <div><b style="color:#5DB6DE">Sensory room</b><p>Dimmable light, bubble tube, weighted and tactile resources.</p></div>
+        <div><b style="color:#F4B63F">Calm colours</b><p>Soft, low-glare walls; bright colour used with purpose.</p></div>
+        <div><b style="color:#F2785C">Quiet zones</b><p>Retreat spaces and acoustic softening for overwhelming moments.</p></div>
+        <div><b style="color:#C8B4EC">Visual home</b><p>Symbol signage, now-and-next boards and visual timetables.</p></div>
+        <div><b style="color:#7CC59A">Garden to move</b><p>Swing, trampoline and space for heavy-work play.</p></div>
+        <div><b style="color:#FFFFFF">Their own room</b><p>Personalised with each child, to their sensory needs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="approach">
+    <p class="eyebrow">Our approach</p>
+    <h2 class="h2">Roots, routine and room to grow.</h2>
+    <ol class="steps">
+      <li><p class="n" style="color:#5DB6DE">01</p><h3>Get to know the child</h3><p>Before moving in: visits, a sensory profile, a communication passport and a transition plan built with the child, family and social worker.</p></li>
+      <li><p class="n" style="color:#F4B63F">02</p><h3>Consistent adults</h3><p>A small, stable team and a named keyworker, trained in autism, positive behaviour support and safeguarding before their first shift.</p></li>
+      <li><p class="n" style="color:#F2785C">03</p><h3>Joined-up support</h3><p>We work closely with schools, CAMHS, speech and language and OT so the plan is the same at home and in class.</p></li>
+      <li><p class="n" style="color:#A98BDB">04</p><h3>Their voice counts</h3><p>Children shape their home and their plans, in whatever way they communicate best.</p></li>
+    </ol>
+  </section>
+
+  <section class="band" id="referrals" style="margin-top:56px">
+    <div class="wrap">
+      <div class="col">
+        <p class="eyebrow">For local authorities</p>
+        <h2 class="h2">Referrals and commissioning</h2>
+        <p>We respond to every referral the same working day with an honest view on whether we can meet the child's needs. If we can't, we'll say so quickly.</p>
+        <p>Our Statement of Purpose, policies, insurance and registration details are available on request for provider onboarding and framework applications.</p>
+        <a class="btn" href="#contact">Send a referral</a>
+      </div>
+      <div class="col box">
+        <h3>What to send us</h3>
+        <ul>
+          <li>Referral form or placement request</li>
+          <li>Care plan and risk assessment</li>
+          <li>EHCP and any diagnosis or assessments</li>
+          <li>Communication and sensory information, if known</li>
+          <li>Preferred start date and education arrangements</li>
+        </ul>
+        <p style="margin:24px 0 0;font-size:16px"><strong>Referrals:</strong> referrals@everoakcare.com<br><strong>Phone:</strong> [020 XXXX XXXX]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap careers" id="careers">
+    <div style="flex:1 1 520px;min-width:0">
+      <p class="eyebrow">Careers</p>
+      <h2 class="h2">Be one of the first adults our children get to know.</h2>
+      <p class="lede">We're building our founding team: a Registered Manager, residential support workers and waking-night staff who care about getting the small things right.</p>
+    </div>
+    <a class="btn" href="#contact">Ask about roles</a>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="contact">
+      <div style="flex:1 1 320px;min-width:0">
+        <h2 class="h2">Talk to us</h2>
+        <p class="lede" style="margin-bottom:20px">Social workers, commissioners, families and future colleagues: we'd love to hear from you.</p>
+        <p style="font-size:17px">hello@everoakcare.com<br>[020 XXXX XXXX]<br>South London</p>
+      </div>
+      <form id="contactForm" method="POST" action="https://formsubmit.co/omar@everoakcare.com">
+        <input type="hidden" name="_subject" value="New enquiry from everoakcare.com">
+        <input type="hidden" name="_next" value="https://everoakcare.com/thanks.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="f-name">Name<input id="f-name" name="name" type="text" required autocomplete="name"></label>
+        <label for="f-email">Work email<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+        <label for="f-org">Organisation<input id="f-org" name="organisation" type="text" autocomplete="organization"></label>
+        <label for="f-topic">I'm getting in touch about<select id="f-topic" name="topic"><option>A referral</option><option>Provider onboarding</option><option>A job</option><option>Something else</option></select></label>
+        <label class="full" for="f-msg">Message<textarea id="f-msg" name="message" rows="4"></textarea></label>
+        <p class="note full">Please don't include a child's name or identifying details here. We'll arrange a secure way to share them.</p>
+        <div class="full" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <button class="btn" type="submit">Send message</button>
+          <p id="formMsg" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div style="flex:1 1 320px"><b>everoak care</b><p>Small, sensory-friendly children's homes across London.</p></div>
+    <div style="flex:1 1 420px">
+      <p>Everoak Care Ltd · Registered in England, company no. [XXXXXXXX]</p>
+      <p>Ofsted URN: [added once registered]</p>
+      <p><a href="#top">Privacy</a> · <a href="#top">Safeguarding</a> · <a href="#top">Complaints</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
