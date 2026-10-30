@@ -295,22 +295,11 @@ footer a{color:#FFFFFF}
         <p class="lede" style="margin-bottom:20px">Social workers, commissioners, families and future colleagues: we'd love to hear from you.</p>
         <p style="font-size:17px">hello@everoakcare.com<br><a href="tel:+447342045712" style="color:inherit;font-weight:700">07342 045712</a><br>South London</p>
       </div>
-      <form id="contactForm" method="POST" action="https://formsubmit.co/omar@everoakcare.com">
-        <input type="hidden" name="_subject" value="New enquiry from everoakcare.com">
-        <input type="hidden" name="_next" value="https://everoakcare.com/thanks.html">
-        <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <label for="f-name">Name<input id="f-name" name="name" type="text" required autocomplete="name"></label>
-        <label for="f-email">Work email<input id="f-email" name="email" type="email" required autocomplete="email"></label>
-        <label for="f-org">Organisation<input id="f-org" name="organisation" type="text" autocomplete="organization"></label>
-        <label for="f-topic">I'm getting in touch about<select id="f-topic" name="topic"><option>A referral</option><option>Provider onboarding</option><option>A job</option><option>Something else</option></select></label>
-        <label class="full" for="f-msg">Message<textarea id="f-msg" name="message" rows="4" required></textarea></label>
-        <p class="note full">Please don't include a child's name or identifying details here. We'll arrange a secure way to share them.</p>
-        <div class="full" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
-          <button class="btn" type="submit">Send message</button>
-          <p id="formMsg" role="status"></p>
-        </div>
-      </form>
+      <div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:16px;justify-content:center">
+        <a class="btn" href="mailto:hello@everoakcare.com?subject=Enquiry%20from%20everoakcare.com" style="text-align:center">Email hello@everoakcare.com</a>
+        <a class="btn ghost" href="tel:+447342045712" style="text-align:center">Call 07342 045712</a>
+        <p class="note">For referrals, email <a href="mailto:referrals@everoakcare.com">referrals@everoakcare.com</a>. Please don't include a child's name or identifying details in a first email. We'll arrange a secure way to share them.</p>
+      </div>
     </div>
   </section>
 </main>
