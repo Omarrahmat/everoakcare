@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Safeguarding | Everoak Care</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Safeguarding | Everoak Care">
+<meta property="og:description" content="Small, sensory-friendly children's homes in South London for young people with learning disabilities, autism and additional needs.">
+<meta name="description" content="How Everoak Care keeps children safe and how to report a concern.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Layout: one 1240px column of full-width colour bands; a tree of coloured circles is the brand's single big moment. */
+:root{
+  --bg:#FFFCF6; --surface:#FFFFFF; --fg:#1D2A24; --muted:#3E4E46; --soft:#4E6B5E;
+  --oak:#1E4D3B; --oak-deep:#123326; --oak-panel:#2A5E4A; --on-oak:#FFFFFF; --on-oak-muted:#D2E2D9;
+  --sun:#F4B63F; --coral:#F2785C; --coral-text:#C4482A; --sky:#5DB6DE; --lilac:#A98BDB; --leaf:#7CC59A;
+  --tint-sky:#EAF5FB; --tint-sun:#FFF3D6; --tint-coral:#FDE9E3; --tint-lilac:#F1EBFB;
+  --line:#BFD6E2; --sun-text:#7A5200; --btn-fg:#FFFFFF; --trunk:#1E4D3B;
+  --display:'Bricolage Grotesque', 'Trebuchet MS', system-ui, sans-serif;
+  --body:Nunito, 'Segoe UI', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1D17; --surface:#16281F; --fg:#ECF3EF; --muted:#BFD0C6; --soft:#A9C2B5;
+  --oak:#9FD6B8; --oak-deep:#0A1611; --oak-panel:#1C3A2D; --on-oak:#0F1D17; --on-oak-muted:#1C3A2D;
+  --coral-text:#FF9E85; --tint-sky:#132A35; --tint-sun:#2E2614; --tint-coral:#33201B; --tint-lilac:#241E33;
+  --line:#2D4A5A; --sun-text:#F4C766; --btn-fg:#0F1D17; --trunk:#CFE6D9; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1D17; --surface:#16281F; --fg:#ECF3EF; --muted:#BFD0C6; --soft:#A9C2B5;
+  --oak:#9FD6B8; --oak-deep:#0A1611; --oak-panel:#1C3A2D; --on-oak:#0F1D17; --on-oak-muted:#1C3A2D;
+  --coral-text:#FF9E85; --tint-sky:#132A35; --tint-sun:#2E2614; --tint-coral:#33201B; --tint-lilac:#241E33;
+  --line:#2D4A5A; --sun-text:#F4C766; --btn-fg:#0F1D17; --trunk:#CFE6D9; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.6}
+a{color:var(--oak)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);color:var(--oak);text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-weight:700;color:var(--coral-text);letter-spacing:1.5px;font-size:14px;text-transform:uppercase;margin-bottom:10px}
+.h2{font-size:clamp(30px,3.6vw,48px);line-height:1.1;margin-bottom:16px}
+.lede{color:var(--muted);max-width:66ch}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 27px;border-radius:999px;border:2px solid var(--oak);background:var(--oak);color:var(--btn-fg);font:inherit;font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--oak)}
+
+/* header */
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-block:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.word{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--oak)}
+.word span{font-weight:500;color:var(--soft)}
+nav{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;font-weight:700;font-size:16px}
+nav a{text-decoration:none}
+nav .btn{padding:11px 20px;font-size:16px}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding-block:32px 72px}
+.hero-copy{flex:1 1 520px;min-width:0}
+.pill{display:inline-block;background:var(--tint-sun);color:var(--sun-text);font-weight:700;font-size:15px;padding:8px 16px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-weight:800;font-size:clamp(40px,5.6vw,76px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--coral-text)}
+.hero .lede{font-size:21px;margin-bottom:32px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.tree{flex:1 1 400px;min-width:0;max-width:520px;margin:0 auto}
+.tree svg{width:100%;height:auto;display:block}
+.tree text{font-family:var(--display);font-weight:700;font-size:15px;fill:#1D2A24}
+.tree .float{animation:bob 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.tree .float:nth-of-type(2){animation-delay:-1.5s}.tree .float:nth-of-type(3){animation-delay:-3s}.tree .float:nth-of-type(4){animation-delay:-4.5s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion: reduce){.tree .float{animation:none}}
+
+/* strip */
+/* promise */
+.promise{display:flex;flex-wrap:wrap;gap:40px 64px;padding-block:8px 80px;align-items:flex-start}
+.promise-copy{flex:1 1 440px;min-width:0}
+.promise-copy p{color:var(--muted);margin-bottom:16px;max-width:60ch}
+.values{flex:1 1 420px;min-width:0;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.values li{display:flex;gap:16px;align-items:center;background:var(--surface);border-radius:20px;padding:16px 20px}
+.values .dot{flex:none;width:40px;height:40px;border-radius:50%}
+.values b{display:block;font-family:var(--display);font-size:20px;color:var(--oak);line-height:1.2}
+.values span{font-size:16px;color:var(--muted)}
+.values .core{outline:3px solid #5DB6DE;outline-offset:-3px}
+.strip{background:var(--oak);color:var(--on-oak)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;padding-block:36px}
+.strip b{display:block;font-family:var(--display);font-size:28px;line-height:1.2}
+.strip p{font-size:16px;opacity:.88}
+.strip .c1{color:var(--sun)}.strip .c2{color:var(--sky)}.strip .c3{color:var(--coral)}.strip .c4{color:var(--lilac)}
+:root[data-theme="dark"] .strip b,:root[data-theme="dark"] .strip p{color:var(--on-oak)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .strip b,:root:not([data-theme="light"]) .strip p{color:var(--on-oak)}}
+
+section.block{padding-block:88px 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:40px}
+.card{border-radius:28px;padding:32px}
+.card h3{font-size:24px;margin-bottom:8px}
+.card p{font-size:17px;color:var(--muted)}
+.icon{width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.t-sky{background:var(--tint-sky)}.t-sun{background:var(--tint-sun)}.t-coral{background:var(--tint-coral)}.t-lilac{background:var(--tint-lilac)}
+
+/* home */
+.home{background:var(--oak-deep);border-radius:40px;padding:clamp(28px,5vw,72px);display:flex;flex-wrap:wrap;gap:48px;color:#EAF2ED}
+.home h2{color:#FFFFFF}
+.home .eyebrow{color:var(--sun)}
+.home-copy{flex:1 1 360px;min-width:0}
+.home-copy p{color:#D2E2D9;margin-bottom:16px}
+.feat{flex:1 1 520px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.feat div{background:#2A5E4A;border-radius:22px;padding:22px}
+.feat b{display:block;margin-bottom:4px}
+.feat p{font-size:16px;color:#D2E2D9}
+
+/* approach */
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px}
+.steps .n{font-family:var(--display);font-size:56px;font-weight:800;line-height:1;margin-bottom:8px}
+.steps h3{font-size:24px;margin-bottom:8px}
+.steps p{font-size:17px;color:var(--muted)}
+
+.band{background:var(--tint-sun)}
+.band .wrap{display:flex;flex-wrap:wrap;gap:48px;padding-block:88px}
+.band .eyebrow{color:var(--sun-text)}
+.col{flex:1 1 440px;min-width:0}
+.col p{color:var(--muted);margin-bottom:18px}
+.box{background:var(--surface);border-radius:28px;padding:36px}
+.box h3{font-size:22px;margin-bottom:16px}
+.box ul{margin:0;padding-left:22px;color:var(--muted);font-size:17px;display:grid;gap:10px}
+
+.careers{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;padding-block:88px}
+.careers .btn{background:var(--coral);border-color:var(--coral);color:#2A0F06}
+
+.contact{background:var(--tint-sky);border-radius:40px;padding:clamp(24px,5vw,64px);display:flex;flex-wrap:wrap;gap:40px;margin-bottom:96px}
+form{flex:1 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px;color:var(--oak)}
+input,select,textarea{font:inherit;font-weight:400;color:var(--fg);padding:13px 16px;border-radius:14px;border:2px solid var(--line);background:var(--surface)}
+.full{grid-column:1/-1}
+.note{font-size:14px;color:var(--muted)}
+#formMsg{font-weight:700;color:var(--oak)}
+
+footer{background:var(--oak-deep);color:#C6D8CE;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;padding-block:48px}
+footer b{font-family:var(--display);font-size:24px;color:#FFFFFF;display:block;margin-bottom:6px}
+footer a{color:#FFFFFF}
+</style>
+
+<style>
+.doc{max-width:760px;margin:0 auto;padding-block:40px 96px}
+.doc h1{font-size:clamp(32px,4vw,48px);line-height:1.08;margin:8px 0 16px}
+.doc h2{font-size:24px;margin:40px 0 10px}
+.doc p,.doc li{color:var(--muted);font-size:17px}
+.doc p{margin:0 0 14px}
+.doc ul,.doc ol{margin:0 0 14px;padding-left:22px;display:grid;gap:6px}
+.doc a{color:var(--oak);font-weight:700}
+.doc .box{background:var(--tint-sky);border-radius:20px;padding:22px 24px;margin:20px 0}
+.doc .alert{background:var(--tint-coral)}
+.doc table{width:100%;border-collapse:collapse;font-size:16px;margin:8px 0 16px}
+.doc th,.doc td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--fg);overflow-wrap:anywhere}
+.doc .meta{font-size:14px;color:var(--muted)}
+</style></head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="Everoak Care home">
+      <svg width="46" height="46" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="42" cy="46" r="24" fill="#F4B63F"/><circle cx="74" cy="40" r="26" fill="#F2785C"/><circle cx="58" cy="66" r="24" fill="#5DB6DE"/><circle cx="84" cy="68" r="18" fill="#A98BDB"/><circle cx="34" cy="70" r="16" fill="#7CC59A"/>
+        <path d="M56 70 L64 70 L66 108 L54 108 Z" fill="var(--trunk)"/><path d="M60 86 L46 74 M60 80 L74 70" stroke="var(--trunk)" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="word">everoak<span> care</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/#who">Who we care for</a>
+      <a href="/#home">Our home</a>
+      <a href="/#approach">Our approach</a>
+      <a href="/#referrals">Referrals</a>
+      <a href="/#careers">Careers</a>
+      <a class="btn" href="/#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+<main id="top"><article class="wrap doc">
+<p class="eyebrow">Safeguarding</p>
+<h1>Keeping children safe</h1>
+<p>Every child at Everoak Care has the right to be safe and to be heard, however they communicate. Safeguarding is everyone's responsibility, and every adult who works with us acts on any concern the same day.</p>
+<div class="box alert"><p style="margin:0;color:var(--fg)"><strong>If a child is in immediate danger, call 999.</strong></p></div>
+<h2>How to report a concern</h2>
+<p>If you are worried about a child living with us, please tell us straight away. You can also go directly to the local authority or the police.</p>
+<table>
+<tr><th>Who</th><th>Contact</th></tr>
+<tr><td>Everoak Care</td><td><a href="tel:+447342045712">07342 045712</a><br><a href="mailto:omar@everoakcare.com">omar@everoakcare.com</a></td></tr>
+<tr><td>Croydon Children's Services (MASH), Mon–Fri 9am–5pm</td><td><a href="tel:+442082552888">020 8255 2888</a></td></tr>
+<tr><td>Croydon out-of-hours Emergency Duty Team</td><td><a href="tel:+442087266400">020 8726 6400</a>, option 5</td></tr>
+<tr><td>NSPCC Helpline (adults)</td><td><a href="tel:+448088005000">0808 800 5000</a></td></tr>
+<tr><td>Childline (children and young people)</td><td><a href="tel:08001111">0800 1111</a>, free, day or night</td></tr>
+</table>
+<h2>Concerns about a member of staff</h2>
+<p>Any concern that an adult working with children may have caused harm is referred to the Local Authority Designated Officer (LADO) within one working day. You can contact Croydon's LADO directly at <a href="mailto:LADO@croydon.gov.uk">LADO@croydon.gov.uk</a> or <a href="tel:+442087266000">020 8726 6000</a> (extension 24817).</p>
+<h2>Our approach</h2>
+<ul>
+<li>Safer recruitment: enhanced DBS checks, full employment history and references for every member of staff.</li>
+<li>Training for all staff in safeguarding, exploitation, online safety and recognising distress in children who communicate without speech.</li>
+<li>Each child has a communication passport so staff understand how they show they are worried or unhappy.</li>
+<li>Independent visits every month and Ofsted inspection once we are registered.</li>
+<li>We work with the London Safeguarding Children Procedures and the Croydon Safeguarding Children Partnership.</li>
+</ul>
+<h2>Whistleblowing</h2>
+<p>Staff can raise concerns about practice without fear. Concerns can also go directly to Ofsted's whistleblowing line on <a href="tel:+443001233155">0300 123 3155</a> or <a href="mailto:whistleblowing@ofsted.gov.uk">whistleblowing@ofsted.gov.uk</a>, or the NSPCC Whistleblowing Advice Line on <a href="tel:+448000280285">0800 028 0285</a>.</p>
+<p>Our full Safeguarding and Child Protection Policy is available to placing authorities and families on request.</p>
+</article></main>
+<footer>
+  <div class="wrap">
+    <div style="flex:1 1 320px"><b>everoak care</b><p>Small, sensory-friendly children's homes across London.</p></div>
+    <div style="flex:1 1 420px">
+      <p><a href="/privacy.html">Privacy</a> · <a href="/safeguarding.html">Safeguarding</a> · <a href="/complaints.html">Complaints</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
